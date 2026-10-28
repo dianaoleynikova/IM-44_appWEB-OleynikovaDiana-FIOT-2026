@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520" role="img" aria-label="Курс HTML і CSS, частина 1">
+  <rect width="320" height="520" fill="#229ae0"/>
+  <rect x="320" width="320" height="520" fill="#f26522"/>
+  <g fill="#fff">
+    <path d="M70 130h180v190l-90 50-90-50z" opacity=".95"/>
+    <path d="M390 130h180v190l-90 50-90-50z" opacity=".95"/>
+  </g>
+  <path d="M90 150h140v165l-70 40-70-40z" fill="#1b75bb"/>
+  <path d="M410 150h140v165l-70 40-70-40z" fill="#d9531e"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#fff" text-anchor="middle">
+    <text x="160" y="255" font-size="52">CSS</text>
+    <text x="480" y="255" font-size="46">HTML</text>
+    <text x="320" y="470" font-size="44">частина 1</text>
+  </g>
+</svg>

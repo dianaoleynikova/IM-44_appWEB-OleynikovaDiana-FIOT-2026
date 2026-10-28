@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskTracker — трекер завдань</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <style>
+    a:link    { color: #2563eb; }
+    a:visited { color: #7c3aed; }
+    a:hover   { color: #dc2626; }
+    a:active  { color: #f59e0b; }
+    fieldset { min-width: 0; }
+    th { background-color: #e8f0fb; }
+    tbody tr:hover { background-color: #fff3bf; }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script src="js/menu.js" defer></script>
+</head>
+<body>
+  <header id="top" class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="#top">
+        <img src="images/logo.svg" alt="Логотип TaskTracker" title="TaskTracker" width="48" height="48">
+        <span>TaskTracker</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="menu" aria-label="Головне меню">
+        <a href="#cards">Можливості</a>
+        <a href="#tasks">Завдання</a>
+        <a href="#info">Про сервіс</a>
+        <a href="#new-task">Нове завдання</a>
+        <a href="description.html">Предметна галузь</a>
+      </nav>
+    </div>
+    <div class="container hero">
+      <h1>TaskTracker</h1>
+      <p>Трекер завдань для команди: плануйте, призначайте виконавців, відстежуйте статус</p>
+      <picture>
+        <source media="(min-width: 650px)" srcset="images/banner-wide.svg">
+        <img src="images/banner-narrow.svg" alt="Банер TaskTracker">
+      </picture>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="cards">
+      <h2>Можливості</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Завдання</h3>
+          <p>Створюйте завдання з пріоритетом, дедлайном і виконавцем.</p>
+        </article>
+        <article class="card">
+          <h3>Команда</h3>
+          <p>Запрошуйте учасників і розподіляйте роботу між ними.</p>
+        </article>
+        <article class="card">
+          <h3>Статуси</h3>
+          <p>Відстежуйте шлях завдання від «До виконання» до «Виконано».</p>
+        </article>
+        <article class="card">
+          <h3>Звіти</h3>
+          <p>Дивіться, скільки завдань виконано і що прострочено.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tasks">
+      <h2>Завдання проєкту</h2>
+      <div style="overflow-x: auto;">
+        <table id="task-table" border="1" cellpadding="6" cellspacing="0">
+          <caption>Список завдань проєкту «Сайт кафедри»</caption>
+          <colgroup>
+            <col style="width: 40px;">
+            <col>
+            <col>
+            <col>
+            <col style="background-color: #fff7d6;">
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Завдання</th>
+              <th>Виконавець</th>
+              <th>Пріоритет</th>
+              <th>Статус</th>
+              <th>Дедлайн</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Розробити макет головної сторінки</td>
+              <td rowspan="2">Діана О.</td>
+              <td class="priority-high">Високий</td>
+              <td class="status status-done">Виконано</td>
+              <td>20.10.2026</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Зверстати головну сторінку</td>
+              <td class="priority-mid">Середній</td>
+              <td class="status status-work">В роботі</td>
+              <td>27.10.2026</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Налаштувати базу даних</td>
+              <td>Максим Д.</td>
+              <td class="priority-high">Високий</td>
+              <td class="status status-review">На перевірці</td>
+              <td>25.10.2026</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Написати документацію API</td>
+              <td>Софія Т.</td>
+              <td class="priority-low">Низький</td>
+              <td class="status status-todo">До виконання</td>
+              <td>05.11.2026</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="6">Усього завдань: 4</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <h3>Дошка завдань</h3>
+      <p>Клікніть на колонку дошки, щоб перейти до відповідного розділу.</p>
+      <div style="overflow-x: auto;">
+        <img src="images/board.svg" alt="Дошка завдань" width="400" height="200" usemap="#boardmap">
+        <map name="boardmap">
+          <area shape="rect" coords="10,30,130,190" href="#tasks" alt="До виконання: таблиця завдань">
+          <area shape="rect" coords="140,30,260,190" href="#info" alt="В роботі: про сервіс">
+          <area shape="rect" coords="270,30,390,190" href="#new-task" alt="Виконано: нове завдання">
+          <area shape="circle" coords="372,14,12" href="#top" alt="Нагору">
+        </map>
+      </div>
+      <p><a href="#top">↑ Нагору</a></p>
+    </section>
+
+    <div class="columns">
+      <section id="info">
+        <h2>Про сервіс</h2>
+        <h3>Життєвий цикл завдання</h3>
+        <ol type="1">
+          <li>Створення завдання.</li>
+          <li>Призначення виконавця.</li>
+          <li>Виконання (статус «В роботі»).</li>
+          <li>Перевірка керівником.</li>
+          <li>Закриття (статус «Виконано»).</li>
+        </ol>
+
+        <h3>Статуси завдання</h3>
+        <ol type="I">
+          <li>До виконання</li>
+          <li>В роботі</li>
+          <li>На перевірці</li>
+          <li>Виконано</li>
+        </ol>
+
+        <h3>Можливості TaskTracker</h3>
+        <ul>
+          <li>Керування завданнями
+            <ul>
+              <li>створення та редагування</li>
+              <li>призначення виконавця</li>
+              <li>пріоритет і дедлайн</li>
+            </ul>
+          </li>
+          <li>Відстеження статусів на дошці та в таблиці</li>
+          <li>Коментарі до завдань</li>
+          <li>Сповіщення про наближення дедлайнів</li>
+        </ul>
+
+        <h3>Словник</h3>
+        <dl>
+          <dt>Завдання</dt>
+          <dd>Окрема одиниця роботи з виконавцем, пріоритетом і дедлайном.</dd>
+          <dt>Статус</dt>
+          <dd>Поточний етап виконання завдання.</dd>
+          <dt>Дедлайн</dt>
+          <dd>Крайній термін виконання завдання.</dd>
+        </dl>
+        <p><a href="#top">↑ Нагору</a></p>
+      </section>
+      <section id="new-task">
+        <h2>Нове завдання</h2>
+        <form action="#" method="post" autocomplete="off">
+          <fieldset>
+            <legend>Створення завдання</legend>
+
+            <p>
+              <label for="title">Назва:</label>
+              <input type="text" id="title" name="title" placeholder="Що потрібно зробити" maxlength="100" required>
+            </p>
+            <p>
+              <label for="descr">Опис:</label><br>
+              <textarea id="descr" name="descr" rows="4" cols="40" style="max-width: 100%;"></textarea>
+            </p>
+            <p>
+              <label for="assignee">Виконавець:</label>
+              <select id="assignee" name="assignee">
+                <optgroup label="Розробники">
+                  <option value="diana">Діана О.</option>
+                  <option value="maksym">Максим Д.</option>
+                </optgroup>
+                <optgroup label="Тестувальники">
+                  <option value="sofia">Софія Т.</option>
+                </optgroup>
+              </select>
+            </p>
+            <p>
+              <label for="tag">Мітка:</label>
+              <input list="tags" id="tag" name="tag">
+              <datalist id="tags">
+                <option value="frontend"></option>
+                <option value="backend"></option>
+                <option value="docs"></option>
+              </datalist>
+            </p>
+            <p>
+              Пріоритет:
+              <input type="radio" id="p-low" name="priority" value="low">
+              <label for="p-low">Низький</label>
+              <input type="radio" id="p-mid" name="priority" value="medium" checked>
+              <label for="p-mid">Середній</label>
+              <input type="radio" id="p-high" name="priority" value="high">
+              <label for="p-high">Високий</label>
+            </p>
+            <p>
+              <label for="deadline">Дедлайн:</label>
+              <input type="date" id="deadline" name="deadline" required>
+            </p>
+            <p>
+              <label for="hours">Оцінка, год:</label>
+              <input type="number" id="hours" name="hours" min="1" max="80" value="4">
+            </p>
+            <p>
+              <label for="level">Складність:</label>
+              <input type="range" id="level" name="level" min="1" max="5" value="3">
+            </p>
+            <p>
+              <label for="email">E-mail виконавця:</label>
+              <input type="email" id="email" name="email" placeholder="name@example.com">
+            </p>
+            <p>
+              <input type="checkbox" id="notify" name="notify" checked>
+              <label for="notify">Сповістити виконавця</label>
+            </p>
+            <p>
+              <button type="submit">Створити</button>
+              <button type="reset">Очистити</button>
+            </p>
+          </fieldset>
+        </form>
+        <p><a href="#top">↑ Нагору</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-cols">
+      <div>
+        <h3>TaskTracker</h3>
+        <p>Трекер завдань для команди. Лабораторна робота №3.</p>
+      </div>
+      <div>
+        <h3>Розділи</h3>
+        <ul>
+          <li><a href="#tasks">Завдання</a></li>
+          <li><a href="#info">Про сервіс</a></li>
+          <li><a href="description.html">Предметна галузь</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Сторінки ЛР №3</h3>
+        <ul>
+          <li><a href="lab3/task2-table-fixed.html">Табличні верстки</a></li>
+          <li><a href="lab3/task2-block-fixed.html">Блокові верстки</a></li>
+          <li><a href="lab3/task3-flexbox.html">Сторінка на flexbox</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакти</h3>
+        <p>© 2026 Олєйнікова Діана, ІМ-44<br>
+          <a href="https://github.com/dianaoleynikova/IM-44_appWEB-OleynikovaDiana-FIOT-2026" target="_blank" rel="noopener">Репозиторій проєкту</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

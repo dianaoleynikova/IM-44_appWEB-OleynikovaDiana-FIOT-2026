@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Логотип TaskTracker">
+  <rect width="120" height="120" rx="24" fill="#2563eb"/>
+  <rect x="22" y="24" width="76" height="72" rx="8" fill="#fff"/>
+  <g fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 40l5 5 9-11"/>
+    <path d="M31 60l5 5 9-11"/>
+    <rect x="31" y="76" width="13" height="13" rx="3" stroke-width="4"/>
+  </g>
+  <g stroke="#9db7e8" stroke-width="5" stroke-linecap="round">
+    <path d="M56 40h30M56 60h30M56 82h20"/>
+  </g>
+</svg>

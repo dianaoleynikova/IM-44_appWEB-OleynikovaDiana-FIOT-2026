@@ -1,0 +1,20 @@
+/* Завдання 2 */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #eef1f6; }
+h1, h2, p { margin: 0 0 0.6em; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.1rem; }
+nav a { display: block; margin: 0 0 0.5em; color: #1d2b4f; font-size: 0.9rem; }
+
+/* Гумова таблична верстка: розміри задано у відсотках */
+table.layout { width: 94%; min-height: 80vh; margin: 20px auto; border-collapse: collapse; background: #fff; }
+table.layout td { vertical-align: top; padding: 1%; border: 1px solid #000; }
+.b2 { width: 20%; }
+.gap { width: 3%; background: #fff; border-top: 0; border-bottom: 0; }
+.side { width: 3%; background: #fff; }
+.b1 { height: 12%; }
+.b3 { height: 10%; }
+
+.b1, .b3 { background: #0066ff; color: #fff; }
+.b2 { background: #ffc800; }
+.b4 { background: #fff; }

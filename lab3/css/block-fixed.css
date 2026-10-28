@@ -1,0 +1,23 @@
+/* Завдання 2 */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #eef1f6; }
+h1, h2, p { margin: 0 0 0.6em; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.1rem; }
+nav a { display: block; margin: 0 0 0.5em; color: #1d2b4f; font-size: 0.9rem; }
+
+/* Фіксована блокова верстка (float): розміри задано в пікселях */
+#page { width: 900px; }
+#b2 { width: 180px; }
+#rest { width: 690px; }
+#b1 { height: 80px; }
+#b4 { height: 460px; }
+#b3 { height: 60px; }
+
+#page { overflow: hidden; margin: 20px auto; background: #fff; border: 1px solid #000; }
+#b2 { float: left; background: #ffc800; padding: 12px; border-right: 1px solid #000;
+      /* рівна висота колонки: розтягуємо блок униз і компенсуємо від'ємним відступом */
+      padding-bottom: 32767px; margin-bottom: -32767px; }
+#rest { float: left; }
+#b1, #b3 { background: #0066ff; color: #fff; padding: 12px; }
+#b4 { background: #fff; padding: 12px; }

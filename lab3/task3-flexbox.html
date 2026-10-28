@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Завдання 3. Сторінка товару (flexbox, варіант 9)</title>
+  <link rel="stylesheet" href="css/task3.css">
+</head>
+<body>
+  <main class="page">
+    <section class="product">
+      <figure class="product-image">
+        <img src="images/course-html-css.svg" alt="HTML і CSS. Професійний курс, частина 1">
+        <span class="badge"><strong>Акція!</strong><span class="percent">67 <small>% мінус</small></span><small>Економія 800 грн</small></span>
+      </figure>
+
+      <div class="product-info">
+        <h1>HTML і CSS. Професійний курс, частина 1</h1>
+        <p class="price"><s>1 190 грн</s> <strong>390 грн</strong></p>
+        <p class="note save"><img src="images/icon-pig.svg" alt="" width="24" height="24"> Ви економите: <strong>800 грн</strong> (67%)</p>
+        <p class="note timer"><img src="images/icon-clock.svg" alt="" width="24" height="24"> Поспішайте! Акція закінчується через 1 день 12 годин 03 хв 38 с</p>
+        <p class="desc">Відеозапис курсу HTML і CSS. На цьому курсі ви навчитеся робити справжні проєкти, такі ж за рівнем складності, як в індустрії. І будете робити їх правильно, щоб після навчання видавати результат високого рівня, за який компанії готові платити.</p>
+        <a class="buy" href="#">Купити →</a>
+        <ul class="trust">
+          <li><img src="images/icon-card.svg" alt="" width="40" height="40"> Безпечні платежі</li>
+          <li><img src="images/icon-shield.svg" alt="" width="40" height="40"> Захист персональних даних</li>
+          <li><img src="images/icon-medal.svg" alt="" width="40" height="40"> 100% унікальні матеріали</li>
+          <li><img src="images/icon-wallet.svg" alt="" width="40" height="40"> Гарантія кращої ціни</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="similar">
+      <h2>Схожі товари</h2>
+      <div class="products">
+        <article class="item">
+          <div class="thumb"><img src="images/course-linux.svg" alt="Linux з нуля"><span class="badge small"><strong>Акція!</strong> 67% мінус</span></div>
+          <h3>Linux з нуля — відеокурс</h3>
+          <p class="item-price"><s>1 190 грн</s> <strong>390 грн</strong></p>
+        </article>
+        <article class="item">
+          <div class="thumb"><img src="images/course-servers.svg" alt="Адміністрування серверів"><span class="badge small"><strong>Акція!</strong> 63% мінус</span></div>
+          <h3>Адміністрування серверів</h3>
+          <p class="item-price"><s>790 грн</s> <strong>290 грн</strong></p>
+        </article>
+        <article class="item">
+          <div class="thumb"><img src="images/course-framework.svg" alt="Курс Angular 8"><span class="badge small"><strong>Акція!</strong> 67% мінус</span></div>
+          <h3>Курс Angular 8</h3>
+          <p class="item-price"><s>1 190 грн</s> <strong>390 грн</strong></p>
+        </article>
+        <article class="item">
+          <div class="thumb"><img src="images/course-sysadmin.svg" alt="Відеокурс системного адміністратора"><span class="badge small"><strong>Акція!</strong> 51% мінус</span></div>
+          <h3>Відеокурс системного адміністратора</h3>
+          <p class="item-price"><s>790 грн</s> <strong>390 грн</strong></p>
+          <a class="buy-small" href="#">Купити</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="col">
+        <h3>Допомога</h3>
+        <ul>
+          <li><a href="#">Довідка</a></li>
+          <li><a href="#">Конфіденційність</a></li>
+          <li><a href="#">Умови використання</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Зв’яжіться з нами</h3>
+        <p class="contact"><img src="images/icon-mail.svg" alt="" width="24" height="24"> <a href="mailto:support@example.com">support@example.com</a></p>
+      </div>
+      <div class="col">
+        <h3>Наші партнери</h3>
+        <p class="chips"><span>Служба доставки</span><span>Платіжний сервіс</span></p>
+      </div>
+      <div class="col">
+        <h3>Безпечні платежі</h3>
+        <p class="chips"><span>Картка</span><span>Безготівково</span></p>
+        <p class="small">Усі операції на сайті безпечні й проходять із використанням шифрованого SSL-з’єднання.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img">
+  <rect width="300" height="300" fill="#0b4fa8"/>
+  <g fill="#fff"><rect x="70" y="70" width="160" height="40" rx="6"/><rect x="70" y="120" width="160" height="40" rx="6"/><rect x="70" y="170" width="160" height="40" rx="6"/></g>
+  <g fill="#0b4fa8"><circle cx="92" cy="90" r="6"/><circle cx="92" cy="140" r="6"/><circle cx="92" cy="190" r="6"/></g>
+  <text x="150" y="255" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">Сервери</text>
+</svg>
